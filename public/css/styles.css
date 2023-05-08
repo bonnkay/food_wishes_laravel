@@ -1,7 +1,7 @@
 .brand-logo {
     padding: 0 !important;
-    background-color: rgb(242, 237, 219) !important;
-
+    background-color: rgb(151, 121, 14) !important;
+    
 }
 
 .img-logo {
@@ -12,7 +12,7 @@
 .icon-menu {
     color: rgb(242, 237, 219) !important;
     margin-left: -5px !important;
-
+    
 }
 
 .icon-main {
@@ -25,28 +25,10 @@
     vertical-align: middle !important;
 }
 
-.menu-desplegar1 {
+.menu-desplegar1{
     margin-left: 7px !important;
 }
-
-.menu-desplegar2 {
+.menu-desplegar2{
     margin-left: 1px !important;
 }
 
-textarea {
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    color: #333;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    height: 100px;
-    line-height: 1.5;
-    margin: 10px;
-    padding: 10px;
-}
-
-.casillaImg {
-    width: 250px !important;
-    height: 250px !important;
-}

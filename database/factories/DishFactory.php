@@ -21,13 +21,13 @@ class DishFactory extends Factory
     public function definition(): array
     {
 
-
+        
         $faker = \Faker\Factory::create();
         $faker->addProvider(new \Smknstd\FakerPicsumImages\FakerPicsumImagesProvider($faker));
-
-        $restaurant_id = $this->faker->numberBetween(1,5);
-        $name = $this->faker->name();
-        $price = $this->faker->numberBetween(1000,800000);
+        
+        $id_restaurant = $this->faker->numberBetween(1,5);
+        $name = $this->faker->userName();
+        $price = $this->faker->randomFloat(1,0.0, 500000);
         $category = $this->faker->randomElement(['Parrilla', 'Tipico Colombiano', 'Comida Rapida', 'Mariscos y Pescados', 'Ensaladas', 'Oriental']);
         $description = $this->faker->paragraph();
         $image = $faker->imageUrl($width = 200, $height = 200);
@@ -35,13 +35,13 @@ class DishFactory extends Factory
 
         return [
             //
-            'restaurant_id' => $restaurant_id ,
-            'name' => $name,
-            'price'=> $price,
-            'category' => $category,
-            'description' => $description,
-            'image'=> "no_dish.jpg",
-            'state' => $state
+            'id_restaurant' => $id_restaurant ,
+            'name' => $name, 
+            'price'=> $price, 
+            'category' => $category,  
+            'description' => $description, 
+            'image'=> $image,  
+            'state' => $state              
         ];
     }
 }

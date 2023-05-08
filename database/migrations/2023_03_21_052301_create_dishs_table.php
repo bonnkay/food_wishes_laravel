@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('dishes', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('restaurant_id');
+            $table->unsignedBigInteger('id_restaurant');
             $table->string('name', 100);
             $table->float('price');
             $table->string('category', 100);
@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('image', 200);
             $table->string('state', 30);
             $table->timestamps();
-            //relación
-            $table->foreign('restaurant_id')->references('id')->on('restaurants')->onDelete("cascade");
+            //relacion
+            $table->foreign('id_restaurant')->references('id')->on('restaurants');
         });
     }
 

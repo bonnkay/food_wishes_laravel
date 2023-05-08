@@ -37,7 +37,7 @@ class RestaurantFactory extends Factory
             'adress' => $adress, 
             'phone' => $phone,  
             'description' => $description, 
-            'image'=> "no_restaurant.png",  
+            'image'=> $image,  
             'link' => $link              
         ];     
     }
